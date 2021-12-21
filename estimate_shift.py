@@ -108,8 +108,8 @@ def main(data_path, plot_path, subject_name, side, n_jobs=4):
                 subq = subq.D-subq.P
                 psg = psg.F3-psg.M1
             # set parameters for the syncronization
-            opt = { 'global window':int(fs*20),
-                    'global window s1 additional': int(fs*60),
+            opt = { 'global window s1': int(fs*60),
+                    'global window s2':int(fs*20),
                     'global step': int(fs*60*20),
                     'inner segment':  int(fs*60*1),
                     'outer segment': int(fs*60*4),

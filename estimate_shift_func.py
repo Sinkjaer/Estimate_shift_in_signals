@@ -120,8 +120,8 @@ def est_shift(s1, s2, opt, plot_path='', label='', n_jobs = -1, regression= True
     # init
     s1 = pd.Series(s1)
     s2 = pd.Series(s2)
-    global_window = opt['global window']
-    global_s1_add = opt['global window s1 additional']
+    global_window = opt['global window s2']
+    global_s1_add = int((opt['global window s1']-global_window)/2)
     global_step = opt['global step']
     segment__inner_size = opt['inner segment']
     segment__outer_size = opt['outer segment']  # Size of the window us the estimate to shift
