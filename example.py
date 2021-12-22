@@ -43,7 +43,7 @@ ax.grid(False, axis = 'y')
 # %% Estimate the shift
 fs = 1
 int(fs*100),# set parameters for the syncronization
-opt = { 'global window s1':int(fs*200),
+opt = { 'global window s1':int(fs*300),
         'global window s2': int(fs*100),
         'global step': int(fs*500),
         'inner segment':  int(fs*20),
